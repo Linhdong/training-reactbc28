@@ -4,7 +4,10 @@ import BaiTapThucHanhLayout from './BaitapReactBuoi1/BaiTapThucHanhLayout';
 import HandleEvent from './HandleEvent/HandleEvent';
 import StyleWithJSX from './StyleWithJSX/StyleWithJSX'
 import StateDemo from './StateDemo/StateDemo/StateDemo'
-
+import RenderWithMap from  './RenderWithMap/RenderWithMap'
+import LayoutFilm from './RenderWithMap/LayoutFilm'
+import DemoProps from './Props/DemoProps/DemoProps'
+import ShoeShop  from './ShoesShop/ShoeShop'
 // import DemoFunctionCom from './components/DemoComponent/DemoFunctionCom';
 // import DemoClassCom from './components/DemoComponent/DemoClassCom';
 // import BaiTapLayout from './components/BaiTapLayout/BaiTapLayout'
@@ -18,7 +21,11 @@ function App() {
       {/* <BaiTapThucHanhLayout/> */}
       {/* <HandleEvent/> */}
       {/* <StyleWithJSX/> */}
-      <StateDemo/>
+      {/* <StateDemo/> */}
+      {/* <RenderWithMap/> */}
+      {/* <LayoutFilm/> */}
+      {/* <DemoProps/> */}
+      <ShoeShop/>
      
     </div>
   );
