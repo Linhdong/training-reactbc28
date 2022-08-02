@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import style  from './StyleLayout.module.css'
 import CarouselCom from './CarouselCom'
 import ContentCom from './ContentCom'
 import FooterCom from './FooterCom'
