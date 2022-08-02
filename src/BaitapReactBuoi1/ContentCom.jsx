@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from './ContentCom.module.css'
+
 
 export default class ContentCom extends Component {
     render() {
