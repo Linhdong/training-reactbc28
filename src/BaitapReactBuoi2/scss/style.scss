@@ -1,0 +1,84 @@
+.bg-glasses {
+    background: url('./../../assets/img/glasses/background.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header-glasses {
+    min-height: 10vh;
+    background: rgba(0, 0, 0, .5);
+    color: aliceblue;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-view {
+    width: 900px;
+    margin: 0 auto;
+
+    .row {
+        .glass-left {
+            .vglasses_card {
+                position: relative;
+                overflow: hidden;
+                .model-left {
+                        background-image: url('./../../assets/img/glasses/model.jpg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin: 0 auto;
+                        width: 325px;
+                        height: 400px;
+
+                        img{
+                            position: absolute;
+                            top: 24%;
+                            left: 27.5%;
+                            width: 200px;
+                            height: 70px;
+                            opacity: 0.9;
+                        }
+                }
+
+                .glasses-info{
+                    position: absolute;
+                    bottom: -15px;
+                    left: 56px;
+                    background-color: rgb(253, 176, 60);
+                    color: white;
+                    padding: 0 10px;
+                    display: block;
+                    width: 325px;
+                    transition: all 0.5s;
+
+                    h3{
+                        color: rgba(108, 67, 255, 0.908);
+                    }
+                }
+
+            }
+        }
+
+        .glass-right{
+            .model-right{
+                background-image: url('./../../assets/img/glasses/model.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                width: 325px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+.glasses-catalog{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}

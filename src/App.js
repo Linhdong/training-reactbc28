@@ -8,8 +8,9 @@ import RenderWithMap from  './RenderWithMap/RenderWithMap'
 import LayoutFilm from './RenderWithMap/LayoutFilm'
 import DemoProps from './Props/DemoProps/DemoProps'
 import ShoeShop  from './ShoesShop/ShoeShop'
-import DemoXemChiTiet from './DemoXemChiTiet/DemoXemChiTiet';
+// import DemoXemChiTiet from './DemoXemChiTiet/DemoXemChiTiet';
 import ExerciseCarStore from './Props/ExerciseCarStore/ExerciseCarStore';
+import VitualGlasses from './BaitapReactBuoi2/VitualGlasses';
 // import DemoFunctionCom from './components/DemoComponent/DemoFunctionCom';
 // import DemoClassCom from './components/DemoComponent/DemoClassCom';
 // import BaiTapLayout from './components/BaiTapLayout/BaiTapLayout'
@@ -29,8 +30,8 @@ function App() {
       {/* <DemoProps/> */}
       {/* <ShoeShop/> */}
       {/* <DemoXemChiTiet/> */}
-      <ExerciseCarStore/>
-     
+      {/* <ExerciseCarStore/> */}
+      <VitualGlasses/>
     </div>
   );
 }
