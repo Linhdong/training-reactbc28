@@ -54,6 +54,8 @@ export default class FormProduct extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         console.log(this.state)
+        //Khi người dùng nhấn nút submit => người dữ liệu người dùng nhập từ state => ra hàm addProduct
+        this.props.addProduct(this.state.productInfo)
     }
 
     render() {

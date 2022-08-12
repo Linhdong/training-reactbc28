@@ -9,6 +9,7 @@ import Contact from './page/Contact/Contact';
 import Home from './page/Home/Home';
 import About from './page/About/About'
 import ReactForm from './page/ReactForm/ReactForm'
+import ReactLifeCycle from './page/ReactLifeCycle/ReactLifeCycle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
         <Route path='contact' element={<Contact />}> </Route>
         <Route path='about' element={<About />}> </Route>
         <Route path='reactform' element={<ReactForm />}> </Route>
+        <Route path='lifecycle' element={<ReactLifeCycle/>}> </Route>
         <Route path="*" element={<Navigate to="" />}></Route>
       </Route>
       {/* <Route path='contact' element={<Contact />}>

@@ -22,6 +22,9 @@ function App() {
             <li className="nav-item">
               <NavLink style={({isActive}) => isActive ? {borderRadius: '5px'} : {}} className={({isActive}) => isActive ? 'nav-link bg-warning text-white' : 'nav-link'} to="/reactform">ReactForm</NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink style={({isActive}) => isActive ? {borderRadius: '5px'} : {}} className={({isActive}) => isActive ? 'nav-link bg-warning text-white' : 'nav-link'} to="/lifecycle">LifeCycle</NavLink>
+            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <div className="dropdown-menu" aria-labelledby="dropdownId">
