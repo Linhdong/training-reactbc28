@@ -35,12 +35,19 @@ export default class Child extends PureComponent {
         console.log('render child');
         return (
             <div className='p-5 display-4 bg-dark text-white'>
-                <h2>Child Component: {this.props.number}</h2>
+                <h2>Child Component: {this.props.obNumber.number}</h2>
             </div>
         )
     }
 
+    /**
+     * componentDidMount chạy 1 lần duy nhất 
+     */
     componentDidMount() {
         console.log('componentDidMount child');
+    }
+
+    componentDidUpdate(prevProps,prevState){
+
     }
 }

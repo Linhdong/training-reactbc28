@@ -7,7 +7,11 @@ export default class ReactLifeCycle extends Component {
         super(props);
         this.state = {
             number: 1,
-            like: 1
+            like: 1,
+            objectNumber: {
+                number: 1
+            },
+            count: 60
         }
         console.log('constructor');
     }
@@ -32,10 +36,12 @@ export default class ReactLifeCycle extends Component {
         return (
             <div className='container'>
                 
-                <h3>Number: {this.state.number}</h3>
+                <h3>Number: {this.state.objectNumber.number}</h3>
                 <button className='btn btn-success' onClick={() => {
+                    let objectNumber = {...this.state.objectNumber};
+                    objectNumber.number += 1;
                     this.setState({
-                        number: this.state.number + 1
+                        objectNumber: objectNumber
                     })
                 }}>+</button>
 
@@ -46,16 +52,39 @@ export default class ReactLifeCycle extends Component {
                     })
                 }}>Like</button>
 
-                <Child number = {this.state.number}/>
+                <Child obNumber = {this.state.objectNumber}/>
+                <br/>
+                <h3>Count: {this.state.count}</h3>
             </div>
         )
     }
+
+    timeout = {};
 
     componentDidMount(){
         console.log('componentDidMount');
         //tương tự như window.onload
         //Sau khi render ra giao diện thì đi ra hàm này 
-        //Chỉ chạy 1 lần khi component load lần đầu tiên 
+        //Chỉ chạy 1 lần khi component load lần đầu tiên
+        this.timeout = setInterval(() => {
+            this.setState({
+                count: this.state.count - 1
+            });
+            console.log(this.state.count);
+        },1000)
+    }
+
+
+    componentDidUpdate(prevProps,prevState){
+        //Handle sau khi component gọi render 
+        //Tuy nhiên hạn chế setState lại đây => setState phải có lệnh if
+        // console.log(prevProps);
+        console.log(prevState);
+    }
+
+    componentWillUnmount(){
+        //Trước khi component mất khỏi giao diện => clear tất cả script chạy ngầm 
+        clearInterval(this.timeout);
     }
 }
 
