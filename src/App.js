@@ -86,6 +86,20 @@ function App() {
               </NavLink>
             </li>
 
+            <li className="nav-item">
+              <NavLink
+                style={({ isActive }) =>
+                  isActive ? { borderRadius: "5px" } : {}
+                }
+                className={({ isActive }) =>
+                  isActive ? "nav-link bg-warning text-white" : "nav-link"
+                }
+                to="/thongtinhsinhvien"
+              >
+                ThongTinSV-Redux
+              </NavLink>
+            </li>
+            
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -127,6 +141,16 @@ function App() {
                     to="/demoformcomment"
                   >
                     DemoFormComment
+                  </NavLink>
+
+                  <NavLink
+                    className="dropdown-item"
+                    style={({ isActive }) =>
+                      isActive ? { borderRadius: "5px" } : {}
+                    }
+                    to="/demobuger"
+                  >
+                    DemoBuger
                   </NavLink>
               </div>
             </li>

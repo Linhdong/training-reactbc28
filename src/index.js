@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import './assets/scss/style.scss';
 import reportWebVitals from "./reportWebVitals";
 // import './index.css'
 //Cấu hình react-router-dom
@@ -16,6 +17,8 @@ import { store } from "./redux/ConfigStore";
 import DemoTangGiamSL from "./page/DemoRedux/DemoTangGiamSL/DemoTangGiamSL";
 import DemoChonXe from "./page/DemoRedux/DemoChonXe/DemoChonXe";
 import DemoFormComment from "./page/DemoRedux/DemoFormComment/DemoFormComment";
+import FormSinhVien from "./BaitapReactBuoi3/FormSinhVien";
+import DemoBuger from "./page/DemoRedux/DemoBuger/DemoBuger";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
@@ -38,6 +41,10 @@ root.render(
           <Route path="demochonxe" element={<DemoChonXe/>}>
           </Route>
           <Route path="demoformcomment" element={<DemoFormComment/>}>
+          </Route>
+          <Route path="thongtinhsinhvien" element={<FormSinhVien/>}>      
+          </Route>
+          <Route path="demobuger" element={<DemoBuger/>}>      
           </Route>
           <Route path="*" element={<Navigate to="" />}>
           </Route>
